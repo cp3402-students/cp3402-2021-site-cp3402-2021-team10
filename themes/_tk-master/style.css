@@ -265,3 +265,17 @@ nav .input-group-btn,
 nav .form-control {
     display: inline;
 }
+
+h1.site-title a{
+	color: #000000;
+}
+nav.collapse.navbar-collapse {
+	background-color: #dbaa09;
+}
+a.navbar-brand.theme-brand {
+	color: #ffffff;
+}
+
+#main-menu.nav.navbar-nav > li > a{
+	color: #ffffff;
+}

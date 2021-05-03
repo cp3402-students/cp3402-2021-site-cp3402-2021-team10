@@ -116,7 +116,7 @@ if ( ! function_exists( '_tk_admin_header_image' ) ) :
  * @see _tk_custom_header_setup().
  */
 function _tk_admin_header_image() {
-	$style        = sprintf( ' style="color:#%s;"', get_header_textcolor() );
+	$style        = sprintf( ' style="color:#FFFF00;"', get_header_textcolor() );
 	$header_image = get_header_image();
 ?>
 	<div id="headimg">

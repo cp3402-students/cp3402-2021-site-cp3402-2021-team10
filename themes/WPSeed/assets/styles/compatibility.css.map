@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": ";AAAA;;;;;;;;;;GAUG;ACVF;;;;;;;;;;IAUG;AAGJ;;oFAEoF;AAcpF;;;;;;oFAMoF;AAEpF;mDACmD;AASnD;;oFAEoF;AAGpF;mDACmD;AASnD;mDACmD;AAMnD;mDACmD;AAMnD;mDACmD;AAOnD;;oFAEoF;AAOpF;;oFAEoF;AD9EpF;;oFAEoF;AAEpF;mDACmD;AAEnD,AAAA,GAAG,AAAA,aAAa,CAAC;EACf,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;EACZ,eAAe,EAAE,KAAK;CACvB;;AAED;;oFAEoF",
+    "sources": [
+        "compatibility.scss",
+        "vars.scss"
+    ],
+    "names": [],
+    "file": "compatibility.css"
+}

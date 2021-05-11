@@ -1,0 +1,144 @@
+@charset "UTF-8";
+/**
+ * Essentials
+ *
+ * contains
+ * - responsive/fluid mixins
+ * - general SASS functions
+ * - preset-classes and reusable containers
+ *
+ * Normally, you don't have to change anything here.
+ *
+ * @author      Flurin Dürst
+ * @version     1.2.0
+ * @since       WPSeed 0.13
+ *
+ */
+/*=======================================================
+Table of Contents:
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+  1.0 Responsive Mixins
+  2.0 General SASS-Functions
+  3.0 Presets, Sanitizing
+=======================================================*/
+/**
+  * Variables
+  * Contains re-usable variables like colors, sizes, breakpoints etc.
+  * Normally, you don't have to change anything in essentials.css and general.css
+  * because you'll define the basic-values here.
+  *
+  * @author     Flurin Dürst
+  * @version    2.2.0
+  * @since      WPSeed 0.1
+  *
+  */
+/*==================================================================================
+  SCALING
+==================================================================================*/
+/* to do:
+/* add option to scale  by viewport-width (using html-font-size-rem, as it currently is)
+/* or via fixed breakpoints (also using html-font-size-rem. = VSA)
+
+/*==================================================================================
+  COLORS
+==================================================================================*/
+/* Presets
+/––––––––––––––––––––––––*/
+/*==================================================================================
+  DEFAULTS
+==================================================================================*/
+/* HTML
+/––––––––––––––––––––––––*/
+/* BODY
+/––––––––––––––––––––––––*/
+/* NAV
+/––––––––––––––––––––––––*/
+/* ANCHORS
+/––––––––––––––––––––––––*/
+/*==================================================================================
+  TRANSITIONS
+==================================================================================*/
+/*==================================================================================
+  SHADOWS
+==================================================================================*/
+/*==================================================================================
+  1.0 RESPONSIVE MIXINS
+==================================================================================*/
+/* BY BREAKPOINTS
+/––––––––––––––––––––––––*/
+/* BY PIXELS
+/––––––––––––––––––––––––*/
+/* BY ASPECT RATIO
+/––––––––––––––––––––––––*/
+/* BY CLASS
+/––––––––––––––––––––––––*/
+@media (min-width: 800px) {
+  .mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 799px) {
+  .desktop {
+    display: none;
+  }
+}
+
+/*==================================================================================
+  2.0 GENERAL SASS-FUNCTIONS
+==================================================================================*/
+/* STRIP UNIT
+/––––––––––––––––––––––––*/
+/*==================================================================================
+  3.0 PRESETS, SANITIZING
+==================================================================================*/
+/* PRESETS
+/––––––––––––––––––––––––*/
+.noscroll {
+  overflow: hidden;
+}
+
+.dn {
+  display: none !important;
+}
+
+.db {
+  display: block !important;
+}
+
+.hidden {
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+.shown {
+  opacity: 1 !important;
+  pointer-events: all !important;
+}
+
+html[data-touch=false] .taplink {
+  pointer-events: none;
+  cursor: none;
+}
+
+/* ADDITIONAL SANITIZING
+/––––––––––––––––––––––––*/
+:focus {
+  outline: 0;
+}
+
+address {
+  font-style: normal;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  font-size: 1rem;
+  font-family: "Asap", sans-serif;
+}
+
+table {
+  border-collapse: collapse;
+}
+/*# sourceMappingURL=essentials.css.map */

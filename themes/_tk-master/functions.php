@@ -98,6 +98,9 @@ add_action( 'widgets_init', '_tk_widgets_init' );
  */
 function _tk_scripts() {
 
+	wp_deregister_script('jquery');
+    wp_register_script( 'jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js');
+
 	// Import the necessary TK Bootstrap WP CSS additions
 	wp_enqueue_style( '_tk-bootstrap-wp', THEME_DIR_URI . '/includes/css/bootstrap-wp.css' );
 

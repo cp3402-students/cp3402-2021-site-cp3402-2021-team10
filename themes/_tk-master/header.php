@@ -22,6 +22,7 @@
 </head>
 
 <body <?php body_class(); ?>>
+	<?php wp_body_open(); ?>
 	<?php do_action( 'before' ); ?>
 
 <header id="masthead" class="site-header" role="banner">

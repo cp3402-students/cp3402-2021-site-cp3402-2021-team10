@@ -39,6 +39,8 @@ function _tk_setup() {
 	*/
 	add_theme_support( 'automatic-feed-links' );
 
+	add_theme_support( 'title-tag' );
+
 	/**
 	 * Enable support for Post Thumbnails on posts and pages
 	 *
@@ -98,7 +100,6 @@ add_action( 'widgets_init', '_tk_widgets_init' );
  */
 function _tk_scripts() {
 
-	wp_deregister_script('jquery');
     wp_register_script( 'jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js');
 
 	// Import the necessary TK Bootstrap WP CSS additions

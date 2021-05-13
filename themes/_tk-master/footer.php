@@ -5,7 +5,13 @@
  * Contains the closing of the id=main div and all content after
  *
  * @package _tk
+ * 
  */
+
+global $wp;
+$current_url = home_url(add_query_arg(array(), $wp->request));
+ 
+
 ?>
 			</div><!-- close .*-inner (main-content or sidebar, depending if sidebar is used) -->
 		</div><!-- close .row -->
@@ -15,6 +21,12 @@
 <footer id="colophon" class="site-footer" role="contentinfo">
 <?php // substitute the class "container-fluid" below if you want a wider content area ?>
 	<div class="container">
+		<div class="row">
+			<ol class="breadcrumb">
+				<li><a href="<?php echo $current_url ?>"><?php the_title(); ?></a></li>
+			</ol>
+		
+		</div>
 		<div class="row">
 			<div class="site-footer-inner col-sm-12">
 

@@ -28,7 +28,7 @@
 <header id="masthead" class="site-header" role="banner">
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   	<div class="container-fluid">
-		<?php $header_image = get_header_image();
+	  <?php $header_image = get_header_image();
 				if ( ! empty( $header_image ) ) { ?>
 					<a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
 						<img src="<?php header_image(); ?>" width="50px" height="50px" alt="">
@@ -39,7 +39,7 @@
     	<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       		<span class="navbar-toggler-icon"></span>
     	</button>
-		<div class=""
+		<div>
     	<?php wp_nav_menu(
 						array(
 							'theme_location' 	=> 'primary',
@@ -53,6 +53,7 @@
 							'walker' 			=> new wp_bootstrap_navwalker()
 						)
 					); ?>
+		</div>	
 	</div>
 </nav>
 <?php // substitute the class "container-fluid" below if you want a wider content area ?>

@@ -1,0 +1,48 @@
+May 12 2021 05:01:06
+{"type":2,"message":"POST Content-Length of 244413148 bytes exceeds the limit of 8388608 bytes","file":"Unknown","line":0}
+
+May 12 2021 05:01:10
+{"Number":2,"Message":"filesize(): stat failed for \/var\/www\/public\/wp-content\/plugins\/all-in-one-wp-migration\/storage\/j64c1nuxc3dd\/0zo.bde.myftpupload.com-20210512-041414-9d3mwa.wpress","File":"\/var\/www\/public\/wp-content\/plugins\/all-in-one-wp-migration\/functions.php","Line":229}
+
+May 12 2021 05:01:10
+{"Number":2,"Message":"Division by zero","File":"\/var\/www\/public\/wp-content\/plugins\/all-in-one-wp-migration\/lib\/model\/import\/class-ai1wm-import-validate.php","Line":79}
+
+May 12 2021 05:01:10
+{"Number":2,"Message":"fopen(\/var\/www\/public\/wp-content\/plugins\/all-in-one-wp-migration\/storage\/j64c1nuxc3dd\/0zo.bde.myftpupload.com-20210512-041414-9d3mwa.wpress): failed to open stream: No such file or directory","File":"\/var\/www\/public\/wp-content\/plugins\/all-in-one-wp-migration\/lib\/vendor\/servmask\/archiver\/class-ai1wm-archiver.php","Line":98}
+
+May 12 2021 05:01:29
+{"type":2,"message":"POST Content-Length of 244413148 bytes exceeds the limit of 8388608 bytes","file":"Unknown","line":0}
+
+May 12 2021 05:01:32
+{"Number":2,"Message":"filesize(): stat failed for \/var\/www\/public\/wp-content\/plugins\/all-in-one-wp-migration\/storage\/l9b2qr0r2k2i\/0zo.bde.myftpupload.com-20210512-041414-9d3mwa.wpress","File":"\/var\/www\/public\/wp-content\/plugins\/all-in-one-wp-migration\/functions.php","Line":229}
+
+May 12 2021 05:01:32
+{"Number":2,"Message":"Division by zero","File":"\/var\/www\/public\/wp-content\/plugins\/all-in-one-wp-migration\/lib\/model\/import\/class-ai1wm-import-validate.php","Line":79}
+
+May 12 2021 05:01:32
+{"Number":2,"Message":"fopen(\/var\/www\/public\/wp-content\/plugins\/all-in-one-wp-migration\/storage\/l9b2qr0r2k2i\/0zo.bde.myftpupload.com-20210512-041414-9d3mwa.wpress): failed to open stream: No such file or directory","File":"\/var\/www\/public\/wp-content\/plugins\/all-in-one-wp-migration\/lib\/vendor\/servmask\/archiver\/class-ai1wm-archiver.php","Line":98}
+
+May 12 2021 05:26:45
+{"type":2,"message":"POST Content-Length of 244413148 bytes exceeds the limit of 8388608 bytes","file":"Unknown","line":0}
+
+May 12 2021 05:26:51
+{"Number":2,"Message":"filesize(): stat failed for \/var\/www\/public\/wp-content\/plugins\/all-in-one-wp-migration\/storage\/7jo7xipbzq7b\/0zo.bde.myftpupload.com-20210512-041414-9d3mwa.wpress","File":"\/var\/www\/public\/wp-content\/plugins\/all-in-one-wp-migration\/functions.php","Line":229}
+
+May 12 2021 05:26:51
+{"Number":2,"Message":"Division by zero","File":"\/var\/www\/public\/wp-content\/plugins\/all-in-one-wp-migration\/lib\/model\/import\/class-ai1wm-import-validate.php","Line":79}
+
+May 12 2021 05:26:51
+{"Number":2,"Message":"fopen(\/var\/www\/public\/wp-content\/plugins\/all-in-one-wp-migration\/storage\/7jo7xipbzq7b\/0zo.bde.myftpupload.com-20210512-041414-9d3mwa.wpress): failed to open stream: No such file or directory","File":"\/var\/www\/public\/wp-content\/plugins\/all-in-one-wp-migration\/lib\/vendor\/servmask\/archiver\/class-ai1wm-archiver.php","Line":98}
+
+May 12 2021 05:26:51
+{"type":32,"message":"PHP Startup: Unable to load dynamic library '\/usr\/lib\/php\/20151012\/mongo.so' - \/usr\/lib\/php\/20151012\/mongo.so: cannot open shared object file: No such file or directory","file":"Unknown","line":0}
+
+May 12 2021 05:34:30
+{"type":32,"message":"PHP Startup: Unable to load dynamic library '\/usr\/lib\/php\/20151012\/mongo.so' - \/usr\/lib\/php\/20151012\/mongo.so: cannot open shared object file: No such file or directory","file":"Unknown","line":0}
+
+May 12 2021 05:34:33
+{"type":32,"message":"PHP Startup: Unable to load dynamic library '\/usr\/lib\/php\/20151012\/mongo.so' - \/usr\/lib\/php\/20151012\/mongo.so: cannot open shared object file: No such file or directory","file":"Unknown","line":0}
+
+May 12 2021 05:34:43
+{"type":32,"message":"PHP Startup: Unable to load dynamic library '\/usr\/lib\/php\/20151012\/mongo.so' - \/usr\/lib\/php\/20151012\/mongo.so: cannot open shared object file: No such file or directory","file":"Unknown","line":0}
+

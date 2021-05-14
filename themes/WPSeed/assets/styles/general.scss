@@ -1,0 +1,132 @@
+/**
+ * General CSS File
+ * Contains defaults and presets
+ *
+ * The Idea is to keep editing in this file to a
+ * minimum while using vars.scss for very basic styling.
+ *
+ * @author      Flurin Dürst
+ * @version     1.13.0
+ * @since       WPSeed 0.1
+ *
+ */
+
+
+@import 'vars';
+
+
+
+/*==================================================================================
+  GENERAL
+==================================================================================*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  max-width: 100vw;
+  height: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  font-family: $html__fontname;
+  font-size: $base_size; // only used for rem-handling, the actual font-size is $body__fontsize
+  color: $html__textcolor;
+  background-color: $html__bgcolor;
+  @include vpw_min($scaling_endpoint) {
+    font-size: $scaling_endpoint / 100 * stripunit($base_size);
+  }
+  @include mobile {
+    font-size: $base_size_mobile;
+  }
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body  {
+  // used as wrapper for sticky footer
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  font-size: $body__fontsize;
+  font-weight: $body__fontweight;
+  line-height: $body__lineheight;
+  @include mobile {
+    font-size: $body__fontsize_mobile;
+  }
+}
+
+
+
+/*==================================================================================
+  PRESETS
+==================================================================================*/
+
+/* default for wowjs
+/––––––––––––––––––––––––*/
+.wow {
+  visibility: hidden;
+}
+
+
+/* Fixes/Hacks
+/––––––––––––––––––––––––*/
+
+// anchor div to fix .top overlap when navigation through 'domain.tld/#anchor'
+.anchor {
+  display: block;
+  height: $header_height;
+  margin-top: -$header_height;  // negative top_height
+}
+
+
+/* Animation Presets
+/––––––––––––––––––––––––*/
+
+/* Animations
+/––––––––––––––––––––––––*/
+.ani-0-2    {animation-delay: .0s; animation-duration: .2s;}
+.ani-2-2    {animation-delay: .2s; animation-duration: .2s;}
+.ani-4-2    {animation-delay: .4s; animation-duration: .2s;}
+.ani-6-2    {animation-delay: .6s; animation-duration: .2s;}
+.ani-8-2    {animation-delay: .8s; animation-duration: .2s;}
+.ani-10-2   {animation-delay:  1s; animation-duration: .2s;}
+
+.ani-0-4    {animation-delay: .0s; animation-duration: .4s;}
+.ani-2-4    {animation-delay: .2s; animation-duration: .4s;}
+.ani-4-4    {animation-delay: .4s; animation-duration: .4s;}
+.ani-6-4    {animation-delay: .6s; animation-duration: .4s;}
+.ani-8-4    {animation-delay: .8s; animation-duration: .4s;}
+.ani-10-4   {animation-delay:  1s; animation-duration: .4s;}
+
+.ani-0-6    {animation-delay: .0s; animation-duration: .6s;}
+.ani-2-6    {animation-delay: .2s; animation-duration: .6s;}
+.ani-4-6    {animation-delay: .4s; animation-duration: .6s;}
+.ani-6-6    {animation-delay: .6s; animation-duration: .6s;}
+.ani-8-6    {animation-delay: .8s; animation-duration: .6s;}
+.ani-10-6   {animation-delay:  1s; animation-duration: .6s;}
+
+.ani-0-8    {animation-delay: .0s; animation-duration: .8s;}
+.ani-2-8    {animation-delay: .2s; animation-duration: .8s;}
+.ani-4-8    {animation-delay: .4s; animation-duration: .8s;}
+.ani-6-8    {animation-delay: .6s; animation-duration: .8s;}
+.ani-8-8    {animation-delay: .8s; animation-duration: .8s;}
+.ani-10-8   {animation-delay:  1s; animation-duration: .8s;}
+
+.ani-0-10    {animation-delay: .0s; animation-duration: 1s;}
+.ani-2-10    {animation-delay: .2s; animation-duration: 1s;}
+.ani-4-10    {animation-delay: .4s; animation-duration: 1s;}
+.ani-6-10    {animation-delay: .6s; animation-duration: 1s;}
+.ani-8-10    {animation-delay: .8s; animation-duration: 1s;}
+.ani-10-10   {animation-delay:  1s; animation-duration: 1s;}

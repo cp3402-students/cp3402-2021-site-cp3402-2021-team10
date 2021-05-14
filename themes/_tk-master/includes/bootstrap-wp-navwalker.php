@@ -65,10 +65,12 @@ class wp_bootstrap_navwalker extends Walker_Nav_Menu {
 			if ( $args->has_children )
 				$class_names .= ' dropdown';
 
+			
 			if ( in_array( 'current-menu-item', $classes ) )
-				$class_names .= ' active';
+				$class_names .= 'active';
 
-			$class_names = $class_names ? ' class="' . esc_attr( $class_names ) . '"' : '';
+
+			$class_names = $class_names ? ' class="nav-item ' . esc_attr( $class_names ) . '"' : '';
 
 			$id = apply_filters( 'nav_menu_item_id', 'menu-item-'. $item->ID, $item, $args );
 			$id = $id ? ' id="' . esc_attr( $id ) . '"' : '';
@@ -112,7 +114,11 @@ class wp_bootstrap_navwalker extends Walker_Nav_Menu {
 			if ( ! empty( $item->attr_title ) )
 				$item_output .= '<a'. $attributes .'><span class="glyphicon ' . esc_attr( $item->attr_title ) . '"></span>&nbsp;';
 			else
-				$item_output .= '<a'. $attributes .'>';
+				$active_class = '';
+				if ( in_array('current-menu-item', $classes ) ){
+					$active_class = ' active';
+				}
+				$item_output .= '<a class="nav-link'. $active_class . '" '. $attributes .'>';
 
 			$item_output .= $args->link_before . apply_filters( 'the_title', $item->title, $item->ID ) . $args->link_after;
 			$item_output .= ( $args->has_children && 0 === $depth ) ? ' <span class="caret"></span></a>' : '</a>';
@@ -194,7 +200,7 @@ class wp_bootstrap_navwalker extends Walker_Nav_Menu {
 				$fb_output .= ' class="' . $menu_class . '"';
 
 			$fb_output .= '>';
-			$fb_output .= '<li><a href="' . admin_url( 'nav-menus.php' ) . '">Add a menu</a></li>';
+			$fb_output .= '<li class="nav-item"><a class="nav-link" href="' . admin_url( 'nav-menus.php' ) . '">Add a menu</a></li>';
 			$fb_output .= '</ul>';
 
 			if ( $container )

@@ -1,4 +1,4 @@
-Deployment Requirements:
+Deployment Requirements and Instructions:
 
 - Install Vagrant
 - Setup local site running WPDistillery through Vagrant

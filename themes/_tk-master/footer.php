@@ -18,23 +18,21 @@ $current_url = home_url(add_query_arg(array(), $wp->request));
 	</div><!-- close .container -->
 </div><!-- close .main-content -->
 
-<footer id="colophon" class="site-footer" role="contentinfo">
+<footer id="colophon" class="bd-footer footer py-3 mt-auto bg-light position-fixed bottom-0 start-0 end-0" role="contentinfo">
 <?php // substitute the class "container-fluid" below if you want a wider content area ?>
-	<div class="container">
+	<div class="container-fluid">
 		<div class="row">
-			<ol class="breadcrumb">
-				<li><a href="<?php echo $current_url ?>"><?php the_title(); ?></a></li>
-			</ol>
-		
-		</div>
-		<div class="row">
-			<div class="site-footer-inner col-sm-12">
+			<div class="col-sm-6">
+			<a class="text-decoration-none link-dark translate-middle" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
 
-				<div class="site-info">
+
+			</div>
+			<div class="site-footer-inner col-sm-6 text-end">
+				<div class="site-info small">
 					<?php do_action( '_tk_credits' ); ?>
-					<a href="http://wordpress.org/" title="<?php esc_attr_e( 'A Semantic Personal Publishing Platform', '_tk' ); ?>" rel="generator"><?php printf( __( 'Proudly powered by %s', '_tk' ), 'WordPress' ); ?></a>
-					<span class="sep"> | </span>
-                    <a class="credits" rel="nofollow" href="http://themekraft.com/" target="_blank" title="Themes and Plugins developed by Themekraft" alt="Themes and Plugins developed by Themekraft"><?php _e('Themes and Plugins developed by Themekraft.','_tk') ?> </a>
+					<a class="d-inline-flex align-items-center link-dark text-decoration-none" href="http://wordpress.org/" title="<?php esc_attr_e( 'A Semantic Personal Publishing Platform', '_tk' ); ?>" rel="generator"><strong><?php printf( __( 'Proudly powered by %s', '_tk' ), 'WordPress' ); ?></strong></a>
+					
+                    <a class="credits d-inline-flex align-items-center link-dark text-decoration-none" rel="nofollow" href="http://themekraft.com/" target="_blank" title="Themes and Plugins developed by Themekraft" alt="Themes and Plugins developed by Themekraft"><?php _e('Themes and Plugins developed by Themekraft.','_tk') ?> </a>
 				</div><!-- close .site-info -->
 
 			</div>

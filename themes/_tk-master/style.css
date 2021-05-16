@@ -43,9 +43,10 @@ Credits:
 */
 
 /* My Minimal WordPress Styling comes here */
-.main-content{
-	background-color: gold;
-}
+footer .footer {	position: absolute;
+	left: 0; 
+	right:0; 
+	bottom: 0;}
 
 /* This is a small security for too long strings titles */
 body {

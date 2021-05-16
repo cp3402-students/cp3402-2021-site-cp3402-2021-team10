@@ -61,7 +61,6 @@ class wp_bootstrap_navwalker extends Walker_Nav_Menu {
 			$classes[] = 'menu-item-' . $item->ID;
 
 			$class_names = join( ' ', apply_filters( 'nav_menu_css_class', array_filter( $classes ), $item, $args ) );
-
 			if ( $args->has_children )
 				$class_names .= ' dropdown';
 
@@ -85,8 +84,8 @@ class wp_bootstrap_navwalker extends Walker_Nav_Menu {
 			// If item has_children add atts to a.
 			if ( $args->has_children && $depth === 0 ) {
 				$atts['href']   		= '#';
-				$atts['data-toggle']	= 'dropdown';
-				$atts['class']			= 'dropdown-toggle';
+				$atts['data-bs-toggle']	= 'dropdown';
+				$atts['class']			= 'nav-link dropdown-toggle';
 				$atts['aria-haspopup']	= 'true';
 			} else {
 				$atts['href'] = ! empty( $item->url ) ? $item->url : '';
@@ -116,9 +115,16 @@ class wp_bootstrap_navwalker extends Walker_Nav_Menu {
 			else
 				$active_class = '';
 				if ( in_array('current-menu-item', $classes ) ){
-					$active_class = ' active';
+					$active_class = 'nav-link active';
+				} else if ( in_array('menu-item-has-children', $classes)) {
+					$active_class = 'nav-link dropdown-toggle';
 				}
-				$item_output .= '<a class="nav-link'. $active_class . '" '. $attributes .'>';
+				else if (in_array('menu-item', $classes)) {
+					$active_class = 'nav-link';
+	
+				}
+				
+				$item_output .= '<a class="'. $active_class . '" '. $attributes .'>';
 
 			$item_output .= $args->link_before . apply_filters( 'the_title', $item->title, $item->ID ) . $args->link_after;
 			$item_output .= ( $args->has_children && 0 === $depth ) ? ' <span class="caret"></span></a>' : '</a>';

@@ -36,10 +36,9 @@
 				<?php } // end if ( ! empty( $header_image ) ) ?>
 		
 		<a class="navbar-brand me-auto" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
-    	<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    	<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
       		<span class="navbar-toggler-icon"></span>
     	</button>
-		<div>
     	<?php wp_nav_menu(
 						array(
 							'theme_location' 	=> 'primary',
@@ -47,13 +46,12 @@
 							'container'         => 'div',
 							'container_id'      => 'navbar-collapse',
 							'container_class'   => 'collapse navbar-collapse',
-							'menu_class' 		=> 'navbar-nav mr-auto',
+							'menu_class' 		=> 'navbar-nav me-auto mb-2 mb-lg-0',
 							'fallback_cb' 		=> 'wp_bootstrap_navwalker::fallback',
 							'menu_id'			=> 'main-menu',
 							'walker' 			=> new wp_bootstrap_navwalker()
 						)
 					); ?>
-		</div>	
 	</div>
 </nav>
 <?php // substitute the class "container-fluid" below if you want a wider content area ?>

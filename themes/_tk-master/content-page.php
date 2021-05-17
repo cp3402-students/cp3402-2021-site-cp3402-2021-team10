@@ -15,7 +15,9 @@
 		<div class="entry-content-thumbnail">
 			<?php the_post_thumbnail(); ?>
 		</div>
-		<?php the_content(); ?>
+		<div class="card">
+			<?php the_content(); ?>
+		</div>
 		<?php _tk_link_pages(); ?>
 	</div><!-- .entry-content -->
 	<?php edit_post_link( __( 'Edit', '_tk' ), '<footer class="entry-meta"><span class="edit-link">', '</span></footer>' ); ?>

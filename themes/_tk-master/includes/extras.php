@@ -25,7 +25,7 @@ function _tk_body_classes( $classes ) {
 		$classes[] = 'group-blog';
 	}
 
-	array_push($classes, 'position-relative');
+	array_push($classes, '');
 
 	return $classes;
 }

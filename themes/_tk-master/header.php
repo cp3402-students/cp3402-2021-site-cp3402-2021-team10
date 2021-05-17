@@ -46,7 +46,7 @@
 							'container'         => 'div',
 							'container_id'      => 'navbar-collapse',
 							'container_class'   => 'collapse navbar-collapse',
-							'menu_class' 		=> 'navbar-nav me-auto mb-2 mb-lg-0',
+							'menu_class' 		=> 'navbar-nav ms-auto mb-2 mb-lg-0',
 							'fallback_cb' 		=> 'wp_bootstrap_navwalker::fallback',
 							'menu_id'			=> 'main-menu',
 							'walker' 			=> new wp_bootstrap_navwalker()
@@ -109,7 +109,7 @@
 	</div>--><!-- .container -->
 <!--</nav> .site-navigation -->
 
-<div class="main-content">
+<div class="main-content" style="min-height: 72.5vh;">
 <?php // substitute the class "container-fluid" below if you want a wider content area ?>
 	<div class="container">
 		<div class="row">

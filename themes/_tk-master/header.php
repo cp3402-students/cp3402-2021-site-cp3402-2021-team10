@@ -54,7 +54,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="site-navigation-inner col-sm-12">
-				<div class="navbar navbar-inverse">
+				<div class="navbar navbar-light">
 					<div class="navbar-header">
 						<!-- .navbar-toggle is used as the toggle for collapsed navbar content -->
 						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">

@@ -9,7 +9,7 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header>
-		<h1 class="page-title"><?php the_title(); ?></h1>
+		<h1 class="page-title mb-2"><span class="border-start border-5 border-warning p-2"><?php the_title(); ?></span></h1>
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
@@ -17,7 +17,9 @@
 			<?php the_post_thumbnail(); ?>
 		</div>
 		<div class="card">
-			<?php the_content(); ?>
+			<div class="card-body bg-yellow border border-warning">
+				<?php the_content(); ?>
+			</div>
 		</div>
 		<?php _tk_link_pages(); ?>
 	</div><!-- .entry-content -->

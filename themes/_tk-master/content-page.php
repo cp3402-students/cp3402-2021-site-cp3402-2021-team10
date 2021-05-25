@@ -17,7 +17,7 @@
 			<?php the_post_thumbnail(); ?>
 		</div>
 		<div class="card">
-			<div class="card-body bg-yellow border border-warning">
+			<div class="card-body border" style="background-color: #f8ed62;">
 				<?php the_content(); ?>
 			</div>
 		</div>

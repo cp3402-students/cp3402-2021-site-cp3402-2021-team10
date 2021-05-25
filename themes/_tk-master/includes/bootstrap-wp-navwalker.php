@@ -115,7 +115,7 @@ class wp_bootstrap_navwalker extends Walker_Nav_Menu {
 			else
 				$active_class = '';
 				if ( in_array('current-menu-item', $classes ) ){
-					$active_class = 'nav-link active';
+					$active_class = 'nav-link active border-bottom border-3 border-warning';
 				} else if ( in_array('menu-item-has-children', $classes)) {
 					$active_class = 'nav-link dropdown-toggle';
 				}

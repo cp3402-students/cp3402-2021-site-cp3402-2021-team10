@@ -26,7 +26,7 @@
 	<?php do_action( 'before' ); ?>
 
 <header id="masthead" class="site-header" role="banner">
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom border-5 border-warning">
   	<div class="container-fluid">
 	  <?php $header_image = get_header_image();
 				if ( ! empty( $header_image ) ) { ?>

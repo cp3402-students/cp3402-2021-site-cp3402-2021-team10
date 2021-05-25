@@ -8,7 +8,7 @@
 
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<div class="card text-center border-1 border-warning bg-warning mb-2">
+	<div class="card text-center border-start border-warning mb-2"style="background-color: rgb(255, 193, 7, 0.9);">
 		<div class="card-header">
 			<header>
 				<h1 class="page-title mb-2"><?php the_title(); ?></h1>
@@ -20,7 +20,7 @@
 			<?php the_post_thumbnail(); ?>
 		</div>
 		<div class="card">
-			<div class="card-body border-start border-5 border-warning" style="background-color:#fff9ae;">
+			<div class="card-body border-start border-5 border-warning bg-light">
 				<?php the_content(); ?>
 			</div>
 		</div>

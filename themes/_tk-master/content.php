@@ -14,16 +14,19 @@
 // for example content-single.php for the post single view. ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header>
-		<h1 class="page-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php wp_title('| ', true, 'right'); ?></a></h1>
+	<div class="card">
+		<div class="card-header">
+			<header>
+				<h1 class="page-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php wp_title('| ', true, 'right'); ?></a></h1>
 
-		<?php if ( 'post' == get_post_type() ) : ?>
-		<div class="entry-meta">
-			<?php _tk_posted_on(); ?>
-		</div><!-- .entry-meta -->
-		<?php endif; ?>
-	</header><!-- .entry-header -->
-
+				<?php if ( 'post' == get_post_type() ) : ?>
+				<div class="entry-meta">
+					<?php _tk_posted_on(); ?>
+				</div><!-- .entry-meta -->
+				<?php endif; ?>
+			</header><!-- .entry-header -->
+		</div>
+	<div class="card-body">				
 	<?php if ( is_search() || is_archive() ) : // Only display Excerpts for Search and Archive Pages ?>
 	<div class="entry-summary">
 		<?php the_excerpt(); ?>
@@ -34,7 +37,8 @@
 		<?php _tk_link_pages(); ?>
 	</div><!-- .entry-content -->
 	<?php endif; ?>
-
+	</div>
+	<div class="card-footer">
 	<footer class="entry-meta">
 		<?php if ( 'post' == get_post_type() ) : // Hide category and tag text for pages on Search ?>
 			<?php
@@ -63,5 +67,7 @@
 		<?php endif; ?>
 
 		<?php edit_post_link( __( 'Edit', '_tk' ), '<span class="edit-link">', '</span>' ); ?>
-	</footer><!-- .entry-meta -->
+	</footer>
+	</div><!-- .entry-meta -->
+	</div>
 </article><!-- #post-## -->

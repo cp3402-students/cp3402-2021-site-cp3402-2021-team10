@@ -25,6 +25,8 @@ function _tk_body_classes( $classes ) {
 		$classes[] = 'group-blog';
 	}
 
+	array_push($classes, '');
+
 	return $classes;
 }
 add_filter( 'body_class', '_tk_body_classes' );

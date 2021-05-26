@@ -1,4 +1,0 @@
-<?php 
-/** 
- * Main Template file
- */

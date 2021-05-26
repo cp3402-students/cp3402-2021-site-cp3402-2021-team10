@@ -31,8 +31,9 @@ Files that require editing are mainly:
         -extras.php
         -bootstrap-wp-navwalker
 
-header.php:
-
+header.php: The header.php file is primarily used as a navbar. In the earlier versions of this theme, the site title and description were separate from the navigation bar but now the entire header is wrapped into a navigation bar. boostrap_wp_navwalker.php is used in this file only for the navigation item. The navigation bar was inspired by this free bootstrap theme: 
+https://adminlte.io/themes/v3/
+This theme currently uses Boostrap 4 so using the Boostrap 5 documentation was also required for the updated navigation classes as well. 
 
 footer.php:
 
@@ -59,7 +60,8 @@ are also added through wp_enqueue_script('_tk-bootstrapjs', THEME_DIR_URI . 'fil
 Any new php files in the includes directory such as custom-header.php are also implemented in functions.php first through the require() function.
 
 sidebar.php: sidebar.php is used to customise the widgets provided by WordPress such as search forms. Wrapping the widget titles in a card-header
-was done so that the it matched the style of the custom widgets defined in functions.php. This file can also be used to change the positon of the sidebar within the site.
+was done so that the it matched the style of the custom widgets defined in functions.php. This file can also be used to change the positon of the
+sidebar within the site.
 
 extras.php:The extras.php was specifically used to add classes to the body tag of the site. Line 28 allows you to add any classes the body tag
 may need by pushing new HTML classes to the $classes array which WordPress iterates through. 

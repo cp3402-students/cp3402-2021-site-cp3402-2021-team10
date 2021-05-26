@@ -87,9 +87,9 @@ function _tk_widgets_init() {
 	register_sidebar( array(
 		'name'          => __( 'Sidebar', '_tk' ),
 		'id'            => 'sidebar-1',
-		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s mx-auto">',
 		'after_widget'  => '</aside>',
-		'before_title'  => '<div class="card mb-2 mx-auto"  style="background-color: rgb(255, 193, 7, 0.9); width: 20rem;"><div class="card-header text-center"><h3 class="widget-title">',
+		'before_title'  => '<div class="card mb-2 mx-auto"  style="background-color: rgb(255, 193, 7, 0.9); width: 15rem;"><div class="card-header text-center"><h3 class="widget-title">',
 		'after_title'   => '</h3></div></div>',
 		) );
 }

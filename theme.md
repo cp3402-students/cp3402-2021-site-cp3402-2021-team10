@@ -58,7 +58,8 @@ through wp_enqueue_style('_tk-bootstrap', THEME_DIR_URI . *file name). Only the 
 are also added through wp_enqueue_script('_tk-bootstrapjs', THEME_DIR_URI . 'filename', array('jquery'));.
 Any new php files in the includes directory such as custom-header.php are also implemented in functions.php first through the require() function.
 
-sidebar.php: sidebar.php is used to customise the widgets provided by WordPress such as search forms. 
+sidebar.php: sidebar.php is used to customise the widgets provided by WordPress such as search forms. Wrapping the widget titles in a card-header
+was done so that the it matched the style of the custom widgets defined in functions.php. This file can also be used to change the positon of the sidebar within the site.
 
 extras.php:The extras.php was specifically used to add classes to the body tag of the site. Line 28 allows you to add any classes the body tag
 may need by pushing new HTML classes to the $classes array which WordPress iterates through. 

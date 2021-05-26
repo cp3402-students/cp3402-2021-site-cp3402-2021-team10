@@ -9,6 +9,7 @@ This is a working site re-design for the Townsville Jazz Club. The Jazz club is 
 The current site is used for advertising this club and has features for current members as well, however, social media platforms are also used for this purpose.
 
 
+
 This club would like to widen their audience, and with this in mind the site is designed around a few key goals: - To be extremely user friendly and simple to cater for the main audience - Intend to attract a younger audience with use of modern site design and implementations - Display as much of current content as possible
 
 The starter theme was developed by ThemeKraft. However, this theme has been heavily modified to use Boostrap 5 for a more modern look.   

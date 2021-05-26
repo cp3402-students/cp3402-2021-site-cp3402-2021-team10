@@ -13,6 +13,7 @@ get_header(); ?>
 	<div class="content-padder">
 
 		<?php if ( have_posts() ) : ?>
+		<div class="card">
 
 			<header>
 				<h1 class="page-title">
@@ -94,7 +95,7 @@ get_header(); ?>
 			<?php get_template_part( 'no-results', 'archive' ); ?>
 
 		<?php endif; ?>
-
+		</div>
 	</div><!-- .content-padder -->
 
 <?php get_sidebar(); ?>

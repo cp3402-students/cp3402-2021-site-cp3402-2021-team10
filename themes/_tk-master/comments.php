@@ -20,6 +20,8 @@ if ( post_password_required() )
 ?>
 
 	<div id="comments" class="comments-area">
+	<div class="card mx-auto" style="background-color: rgb(255,255,255,0.9); width: 50rem;">
+	<div class="card-body border-start border-5 border-warning">
 
 	<?php // You can start editing here -- including this comment! ?>
 
@@ -95,5 +97,6 @@ if ( post_password_required() )
 	));
 
 	?>
-
+</div>
+</div>
 </div><!-- #comments -->

@@ -36,6 +36,9 @@
 				<?php } // end if ( ! empty( $header_image ) ) ?>
 		
 		<a class="navbar-brand me-auto" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+		
+		<p class="site-description lead my-auto border-start border-2 border-warning ms-2 ps-2"><?php bloginfo( 'description' ); ?></p>
+			
     	<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
       		<span class="navbar-toggler-icon"></span>
     	</button>
@@ -55,7 +58,7 @@
 	</div>
 </nav>
 <?php // substitute the class "container-fluid" below if you want a wider content area ?>
-	<div class="container">
+	<!-- <div class="container">
 		<div class="row">
 			<div class="site-header-inner col-sm-12">
 				<div class="site-branding">
@@ -63,8 +66,8 @@
 				</div>
 			</div>
 		</div>
-	</div><!-- .container -->
-</header><!-- #masthead -->
+	</div> .container -->
+<!-- </header>#masthead --> -->
 <!--
 <nav class="site-navigation">
 <?php // substitute the class "container-fluid" below if you want a wider content area ?>

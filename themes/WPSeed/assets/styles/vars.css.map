@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": ";AAAC;;;;;;;;;;IAUG;AAGJ;;oFAEoF;AAcpF;;;;;;oFAMoF;AAEpF;mDACmD;AASnD;;oFAEoF;AAGpF;mDACmD;AASnD;mDACmD;AAMnD;mDACmD;AAMnD;mDACmD;AAOnD;;oFAEoF;AAOpF;;oFAEoF",
-    "sources": [
-        "vars.scss"
-    ],
-    "names": [],
-    "file": "vars.css"
-}

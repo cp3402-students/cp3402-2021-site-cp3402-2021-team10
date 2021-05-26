@@ -31,12 +31,14 @@ Files that require editing are mainly:
         -extras.php
         -bootstrap-wp-navwalker
 
-header.php: The header.php file is primarily used as a navbar. In the earlier versions of this theme, the site title and description were separate from the navigation bar but now the entire header is wrapped into a navigation bar. boostrap_wp_navwalker.php is used in this file only for the navigation item. The navigation bar was inspired by this free bootstrap theme: 
+header.php: The header.php file is primarily used as a navbar. In the earlier versions of this theme, the site title and description were
+separate from the navigation bar but now the entire header is wrapped into a navigation bar. boostrap_wp_navwalker.php is used in this file only
+for the navigation item. The navigation bar was inspired by this free bootstrap theme: 
 https://adminlte.io/themes/v3/
 This theme currently uses Boostrap 4 so using the Boostrap 5 documentation was also required for the updated navigation classes as well. 
 
-footer.php:
-
+footer.php: The footer.php file is used to customise the footer of the site. This footer was based off the free AdminLte theme mentioned above.
+This allowed for a simplistic footer which also contains a link to the homepage of the site.
 
 content-page.php: The changes made in this file are used to edit the styling of the content of the site. The main changes that are made include
 editing the page titles and the page content. For this site, the contents mainly wrapped within a semi transparent card as well as the site.

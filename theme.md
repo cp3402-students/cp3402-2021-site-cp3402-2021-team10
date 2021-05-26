@@ -37,8 +37,11 @@ header.php:
 footer.php:
 
 
-content-page.php: The changes made in this file are used to edit the styling of the content of the site. The main changes that are made include editing the page titles and the page content. For this site, the contents mainly wrapped within a semi transparent card as well as the site. Bootstrap 5 uses its own classes with pre-defined colours. This site makes use of the warning colours which is yellow. Using a find and replace of warning can be used to change the theme to another colour. Transparency can be changed trough the style tags that specify a background-colour using the rgb() function where the fourth parameter changes the opacity of the element which value is only between 0 and 1.0. 
-
+content-page.php: The changes made in this file are used to edit the styling of the content of the site. The main changes that are made include
+editing the page titles and the page content. For this site, the contents mainly wrapped within a semi transparent card as well as the site.
+Bootstrap 5 uses its own classes with pre-defined colours. This site makes use of the warning colours which is yellow. Using a find and replace
+of warning can be used to change the theme to another colour. Transparency can be changed trough the style tags that specify a background-colour
+using the rgb() function where the fourth parameter changes the opacity of the element which value is only between 0 and 1.0. 
 
 functions.php: This file controls the most crucial aspects of the theme. This files handles which css, and scripts are implemented into the
 theme. This file was heavily modified to implement the newest version of Boostrap 5 instead of the starter themes Boostrap 3. 
@@ -53,8 +56,9 @@ _tk_scripts() is the most important function which provided the stylesheets and 
 main file that must be modified in order to add any new frameworks or updated frameworks into the site. Adding Bootstrap CSS stylesheets are done
 through wp_enqueue_style('_tk-bootstrap', THEME_DIR_URI . *file name). Only the minified CSS files (.min.css) are enqueued. Boostrap script files
 are also added through wp_enqueue_script('_tk-bootstrapjs', THEME_DIR_URI . 'filename', array('jquery'));.
-Any new php files in the includes directory such as custom-header.php are also implemented in functions.php first through the require() function. 
+Any new php files in the includes directory such as custom-header.php are also implemented in functions.php first through the require() function.
 
+sidebar.php: sidebar.php is used to customise the widgets provided by WordPress such as search forms. 
 
 extras.php:The extras.php was specifically used to add classes to the body tag of the site. Line 28 allows you to add any classes the body tag
 may need by pushing new HTML classes to the $classes array which WordPress iterates through. 
@@ -62,19 +66,3 @@ may need by pushing new HTML classes to the $classes array which WordPress itera
 bootstrap-wp-navwalker.php: This files is used to generate the navigation menu items for the navbar. This ensures that each link is wrapped in
 the appropiate styling required for the navigation menu to output along with the Boostrap 5. Due to the difference in Bootstrap 3 and Bootstrap
 5, necessary modifications were made to this code. This includes styling for navigation items, and dropdown items. 
-
-
-
-https://getbootstrap.com/docs/5.0/migration/
-https://getbootstrap.com/docs/4.0/migration/
-
-Using the links above, classes that referred to depracated Boostrap 3 classes were removed and updated with the most similar Bootstrap 5 
-classes. It's important to note that because an older version of Boostrap 3 was implemented into the starter theme, the code was written to 
-work with the previous implementation. This allows us to save more time on modifying code instead of re-inventing the wheel. 
-
-For example, 
-Bootstrap 5 provides new classes called nav-links for cleaner links that suit the navbar. Using PHP, echoing this class under certain 
-conditions was possible using the previous classes that were generating that line. 
-
-
-

@@ -39,8 +39,11 @@ footer.php:
 content.php:
 
 
-functions.php:
-
+functions.php: This file controls the most crucial aspects of the theme. This files handles which css, and scripts are implemented into the theme. This file was heavily modified to implement the newest version of Boostrap 5 instead of the starter themes Boostrap 3. 
+Firstly, _tk_setup() handles what is supported on the theme. Throughout development, theme support was added for title-tags which was suggested using a Theme check plugin through WordPress. Using the add_theme_support() function allows you to do this while specifying what you want to support in the parameters. 
+The _tk_widgets_init() function was also modified throughout development as well. This was primarily used to customise any custom widgets that are not accessible through WordPress such as a Facebook Widget etc. Cudtomising the HTML was done through modifying the array that WordPress iterates through to output the HTML and/or CSS for the custom widget. This theme only wraps the widgets header in a boostrap 5 card header to be similar to the page titles in content.php for consistency. 
+_tk_scripts() is the most important function which provided the stylesheets and scripts used to implement Boostrap 5 into the site. This is the main file that must be modified in order to add any new frameworks or updated frameworks into the site. Adding Bootstrap CSS stylesheets are done through wp_enqueue_style('_tk-bootstrap', THEME_DIR_URI . *file name). Only the minified CSS files (.min.css) are enqueued. Boostrap script files are also added through wp_enqueue_script('_tk-bootstrapjs', THEME_DIR_URI . 'filename', array('jquery'));.
+Any new php files such as header.php are also implemented in functions first through the require() function. 
 
 
 extras.php:The extras.php was specifically used to add classes to the body tag of the site. Line 28 allows you to add any classes the body tag may need by pushing new HTML classes to the $classes array which WordPress iterates through. 

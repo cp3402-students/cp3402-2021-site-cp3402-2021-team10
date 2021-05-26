@@ -26,6 +26,7 @@
 				<?php the_content(); ?>
 				<?php _tk_link_pages(); ?>
 			</div>
+		</div>
 	</div><!-- .entry-content -->
 
 	<footer class="entry-meta">

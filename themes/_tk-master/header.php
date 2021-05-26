@@ -67,7 +67,7 @@
 			</div>
 		</div>
 	</div> .container -->
-<!-- </header>#masthead --> -->
+<!-- </header>#masthead --> 
 <!--
 <nav class="site-navigation">
 <?php // substitute the class "container-fluid" below if you want a wider content area ?>

@@ -18,7 +18,7 @@ $current_url = home_url(add_query_arg(array(), $wp->request));
 	</div><!-- close .container -->
 </div><!-- close .main-content -->
 
-<footer id="colophon" class="bd-footer footer py-3 mt-auto bg-light" role="contentinfo">
+<footer id="colophon" class="bd-footer footer py-3 mt-auto bg-light border-top border-5 border-warning" role="contentinfo">
 <?php // substitute the class "container-fluid" below if you want a wider content area ?>
 	<div class="container-fluid">
 		<div class="row">
